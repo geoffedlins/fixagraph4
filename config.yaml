@@ -1,0 +1,59 @@
+baseURL: http://fixagraph.com/
+languageCode: en-us
+title: "Fixagraph"
+
+params:
+  hero:
+    # Main hero title
+    title: Writing support for academics with kids.
+    # Hero subtitle (optional)
+    subtitle: Write more in less time with a coach.<br>Write better in no time with an editor.
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Footer logos (from /images/logos/clients/___.svg)
+    clientlogos:
+    - systek
+    - tribe
+    - kromo
+    - infinite
+    - gutwork
+  stepbystep:
+    intro:
+    subintro:
+    #Steps 1, 2, & 3
+    step1: We chat
+    step1copy: We discuss your writing goals to craft a weekly routine & editing program that work for you.
+    step2: You write
+    step2copy: You write on your own or join a writing-room to receive real-time support.
+    step3: Fixagraph edits
+    step3copy: Close your laptop. Let your editor come up with feedback & fixes for your work. 
+  valpropctas:
+    #CTAs
+    ctahero: Make your time count. Make your word count.
+    ctaherobutton: Signup
+    cta1: Build a routine →
+    cta1button: NA
+    cta2: Get unstuck →
+    cta2button: NA
+    cta3: Manage your attention →
+    cta3button: NA
+    cta4: Keep it casual →
+    cta4button: NA
+    #Value Propositions
+    vp1head:
+    vp1title: Write on a schedule
+    vp1copy: The best way to write a lot is to write on a schedule. Let Fixagraph's monthly incentives structure your routine & sustain your daily writing practice.
+    vp2head: 
+    vp2title: Write without fear
+    vp2copy: Forget about getting stuck. Write a good enough sentence and move on. We'll fix it for you later. Spend the time you save on something better than writing a killer transition.
+    vp3head:
+    vp3title:  Write with a purpose
+    vp3copy: Work with an unscripted, bot-free guide to manage your attention for a solid hour of writing, creating space in the rest of your day to manage everything else.
+    vp4head: 
+    vp4title: Write naturally 
+    vp4copy: Avoid the project-based commitments of traditional academic editors. Fixagraph keeps it casual. Ask for help with a single sentence on a Monday & a thousand-words that same Friday. No big deal.
+  footer:
+    mailinglist: Want Fixagraph's weekly newsletter?
+    copyright: Copyright 2018. Made in Baltimore by Geoff Edlins.

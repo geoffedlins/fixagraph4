@@ -1,0 +1,14 @@
+{{- $valpropctas    := .Site.Params.valpropctas }}
+{{- $ctahero        := index $valpropctas "ctahero" }}
+{{- $ctaherobutton  := index $valpropctas "ctaherobutton" }}
+<section class="u-py-0" style="background:url(//assets/img/about/bg-1.jpg) no-repeat; background-size: cover; background-position: center center;"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center d-md-flex align-items-center justify-content-center">
+                <a href="" class="btn btn-green btn-rounded mt-md-0">
+                    {{ $ctaherobutton }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section> <!-- END u-py-100-->

@@ -1,0 +1,78 @@
+{{- $footer    			:= .Site.Params.footer }}
+{{- $mailinglist        := index $footer "mailinglist" }}
+{{- $copyright     		:= index $footer "copyright" }}
+<div class="scroll-top bg-white box-shadow-v1">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div> 
+
+<footer>
+	<section class="bg-footer">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-4 mb-5 mb-lg-0">
+				<img src="assets/img/front/fixagraphlogo.svg" alt="fixagraph">
+				<p class="u-mt-50">
+                    {{ $mailinglist }}
+				</p>
+			<form class="form-inline">
+				<div class="input-group u-rounded-50 bg-white u-of-hidden">
+					<div class="input-group-addon bg-white border-0 pl-4 pr-0">
+						<span class="icon icon-Mail text-primary"></span>
+					</div>
+					<input type="text" class="form-control border-0 p-3" placeholder="Enter your email">
+					<button type="submit" class="input-group-btn btn bg-white">
+						<span class="icon icon-Arrow text-primary"></span>
+					</button>
+				</div>
+			</form>
+
+			</div>		
+			<div class="col-lg-2 col-md-6 ml-auto mb-5 mb-lg-0">
+				<h4>Useful Links</h4>
+				<div class="u-h-4 u-w-50 bg-primary rounded mt-3 u-mb-40"></div>
+				<ul class="list-unstyled u-lh-2">
+					<li><a href="">About Us </a> </li>
+					<li><a href="">Testimonials </a> </li>
+					<li><a href="">Pricing </a> </li>
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">News </a> </li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 ml-auto mb-5 mb-lg-0">
+				<h4>Contact Info</h4>
+				<div class="u-h-4 u-w-50 bg-primary rounded mt-3 u-mb-40"></div>
+				<ul class="list-unstyled">
+					<li class="mb-2">
+						<span class="icon icon-Mail text-primary mr-2"></span> <a href="mailto:support@echotheme.com">support@echotheme.com</a>
+					</li>
+					<li class="mb-2">
+						<span class="icon icon-Pointer text-primary mr-2"></span> Baltimore, Maryland
+					</li>
+				</ul>
+				<ul class="list-inline social social-rounded social-white mt-4">
+					<li class="list-inline-item">
+						<a href=""><i class="fa fa-facebook"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><i class="fa fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><i class="fa fa-google-plus"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><i class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- END row-->
+	</div> <!-- END container-->
+	</section> <!-- END section-->
+	
+	<section class="u-py-40 bg-footer">
+		<div class="container">				
+			<p class="mb-0 text-center"> 
+				&copy; {{ $copyright }}
+			</p>
+		</div>
+	</section>
+</footer> <!-- END footer-->

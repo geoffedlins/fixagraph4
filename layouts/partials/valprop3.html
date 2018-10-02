@@ -1,0 +1,31 @@
+{{- $valpropctas    := .Site.Params.valpropctas }}
+{{- $vp3head        := index $valpropctas "vp3head" }}
+{{- $vp3title      := index $valpropctas "vp3title" }}
+{{- $vp3copy       := index $valpropctas "vp3copy" }}
+{{- $cta3           := index $valpropctas "cta3" }}
+<section class="valproppadding">
+    <div class="container">
+     <div class="row align-items-center">
+          <div class="col-lg-6 my-4">
+              <img src="assets/img/front/stopwatch.svg" alt="">
+          </div> <!-- END col-md-6-->
+          <div class="col-lg-5 ml-auto mt-5 mb-4">
+                <h5 class="u-fs-20 u-mb-5 valpropheader">
+                    {{ $vp3head }}
+                </h5>
+                <h1 class="u-fs-32 u-mb-10">
+                    {{ $vp3title }}
+                </h1>
+                    {{ with $vp3copy }}
+                <h2 class="u-fs-24 u-mb-20 valprop">
+                    {{ . }}
+                </h2>
+                <a href="" class="u-fs-20 ctalink">
+                    {{ $cta3 }}
+                </a>
+                {{ end }}
+          </div> <!-- END col-md-6-->
+     </div> <!-- END 	row-->    
+     </div> <!-- END 	row-->
+    </div> <!-- END container-->
+  </section> <!-- END section-->

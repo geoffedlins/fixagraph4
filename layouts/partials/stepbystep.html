@@ -1,0 +1,63 @@
+{{- $stepbystep       := .Site.Params.stepbystep }}
+{{- $step1            := index $stepbystep "step1" }}
+{{- $step2            := index $stepbystep "step2" }}
+{{- $step3            := index $stepbystep "step3" }}
+{{- $step1copy        := index $stepbystep "step1copy" }}
+{{- $step2copy        := index $stepbystep "step2copy" }}
+{{- $step3copy        := index $stepbystep "step3copy" }}
+{{- $valpropctas      := .Site.Params.valpropctas }}
+{{- $ctaherobutton    := index $valpropctas "ctaherobutton" }}
+<section class="">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 u-mb-25">
+                    <h2 class="h1 u-fs-54 u-mb-60 boldtitle">
+                        How Fixagraph works
+                    </h2>
+                </div>
+            
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <div class="ml-auto text-center">
+                        <img class="w-50" src="assets/img/icons/chat.svg" alt="">
+                    </div>
+                    <h3 class="my-3 u-fs-36 boldtitle blacktext">
+                        {{ $step1 }}
+                    </h3>
+                    <p class="stepbystepwords u-fs-20">
+                        {{ $step1copy }}
+                    </p>
+                </div>  <!-- END col-md-4 -->
+            
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <div class="ml-auto text-center">
+                        <img class="w-50" src="assets/img/icons/typewriter.svg" alt="">
+                    </div>                    
+                    <h3 class="my-3 u-fs-36 boldtitle blacktext">
+                        {{ $step2 }}
+                    </h3>
+                    <p class="stepbystepwords u-fs-20">
+                        {{ $step2copy }}
+                    </p>
+                </div>  <!-- END col-md-4 -->
+            
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <div class="ml-auto text-center">
+                        <img class="w-50" src="assets/img/icons/editing.svg" alt="">
+                    </div>                    
+                    <h3 class="my-3 u-fs-36 boldtitle blacktext">
+                        {{ $step3 }}
+                    </h3>
+                    <p class="stepbystepwords u-fs-20">
+                        {{ $step3copy }}
+                    </p>
+                </div>  <!-- END col-md-4 -->
+                
+                <div class="col-12 u-mt-60 u-mb-80">
+                    <a href="" class="btn btn-green btn-rounded valprop">
+                            {{ $ctaherobutton }}
+                    </a>
+                </div>
+
+            </div> <!-- END row-->
+        </div> <!-- END container-->
+    </section>

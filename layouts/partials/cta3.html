@@ -1,0 +1,18 @@
+{{- $valpropctas    := .Site.Params.valpropctas }}
+{{- $cta3           := index $valpropctas "cta3" }}
+{{- $cta3button     := index $valpropctas "cta3button" }}
+<section class="u-py-100" style="background:url(//assets/img/about/bg-1.jpg) no-repeat; background-size: cover; background-position: center center;"> 
+    <div class="overlay bg-purple"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center d-md-flex  align-items-center justify-content-center">
+                <h2 class="h1 text-white mx-md-5">
+                    {{ $cta3 }}
+                </h2>
+                <a href="" class="btn btn-white btn-rounded mt-4 mt-md-0">
+                    {{ $cta3button }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section> <!-- END u-py-100-->

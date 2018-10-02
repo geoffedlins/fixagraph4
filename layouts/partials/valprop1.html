@@ -1,0 +1,41 @@
+{{- $valpropctas    := .Site.Params.valpropctas }}
+{{- $vp1head        := index $valpropctas "vp1head" }}
+{{- $vp1title       := index $valpropctas "vp1title" }}
+{{- $vp1copy        := index $valpropctas "vp1copy" }}
+{{- $cta1           := index $valpropctas "cta1" }}
+<section class="">
+        <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 u-mb-25">
+                        <h2 class="h1 u-fs-54 u-mb-60 boldtitle">
+                            Save time on your big ideas.<br>
+                            Spend it with your little ones. 
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+         <div class="row align-items-center">
+              <div class="col-lg-6 my-4">
+                    <img src="assets/img/front/october2018.svg" alt="">
+                </div> <!-- END col-md-6-->
+              <div class="col-lg-5 ml-auto mt-5 mb-4">
+                    <h5 class="u-fs-20 u-mb-5 valpropheader">
+                        {{ $vp1head }}
+                    </h5>
+                    <h1 class="u-fs-32 u-mb-10">
+                        {{ $vp1title }}
+                    </h1>
+                        {{ with $vp1copy }}
+                    <h2 class="u-fs-24 u-mb-20 valprop">
+                        {{ . }}
+                    </h2>
+                    <a href="" class="u-fs-20 ctalink">
+                        {{ $cta1 }}
+                    </a>
+                    {{ end }}
+          </div> <!-- END col-md-6-->
+     </div> <!-- END 	row-->    
+     </div> <!-- END 	row-->
+    </div> <!-- END container-->
+  </section> <!-- END section-->

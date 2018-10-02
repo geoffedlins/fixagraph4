@@ -1,0 +1,30 @@
+{{- $valpropctas    := .Site.Params.valpropctas }}
+{{- $vp2head        := index $valpropctas "vp2head" }}
+{{- $vp2title      := index $valpropctas "vp2title" }}
+{{- $vp2copy       := index $valpropctas "vp2copy" }}
+{{- $cta2          := index $valpropctas "cta2" }}
+<section class="valproppadding">
+    <div class="container">
+     <div class="row align-items-center">
+          <div class="col-lg-6 my-4 order-2 order-lg-1">
+            <h5 class="u-fs-20 u-mb-5 valpropheader">
+                {{ $vp2head }}
+            </h5>
+            <h1 class="u-fs-32 u-mb-10">
+                {{ $vp2title }}
+            </h1>
+                {{ with $vp2copy }}
+            <h2 class="u-fs-24 u-mb-20 valprop">
+                {{ . }}
+            </h2>
+            <a href="" class="u-fs-20 ctalink">
+                {{ $cta2 }}
+            </a>
+                {{ end }}
+          </div> <!-- END col-md-6-->
+          <div class="col-lg-5 ml-auto mt-5 mb-4 order-1 order-lg-2">
+              <img src="assets/img/front/lifebuoy2.svg" alt="">
+          </div> <!-- END col-md-6-->
+     </div> <!-- END 	row-->
+    </div> <!-- END container-->
+  </section> <!-- END section-->

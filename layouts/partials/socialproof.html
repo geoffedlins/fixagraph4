@@ -1,0 +1,18 @@
+{{- $hero        := .Site.Params.hero }}
+{{- $clientLogos := index $hero "clientlogos" }}
+<section class="u-py-100 row text-center bg-header">
+    <div class="col-12 u-mt-00 u-mb-0">
+        <h2 class="h1 u-fs-54 u-mb-60 boldtext blacktext">
+            Happy clients work here:
+        </h2>
+    </div>
+  <div class="container text-center">
+			<div class="col-12 d-md-flex justify-content-between text-center">
+        {{- range $clientLogos }}
+          <a>
+            <img class="partner-logo" src="{{ printf "/assets/img/clients/%s.svg" . | relURL }}">
+          </a>
+        {{- end }}
+    </div>
+  </div>
+</section>
